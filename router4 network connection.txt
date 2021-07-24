@@ -1,0 +1,39 @@
+enable
+config t
+interface fa0/0 
+ip address 192.168.50.254 255.255.255.0
+no shut
+do wr
+exit
+
+interface se2/0
+ipaddress 192.168.81.2 255.255.255.0
+no shut
+do wr
+exit
+
+interface se7/0
+ipaddress 192.168.77.2 255.255.255.0
+no shut
+do wr
+exit
+
+interface se6/0
+ipaddress 192.168.72.2 255.255.255.0
+no shut
+do wr
+exit
+
+interface se8/0
+ipaddress 192.168.82.1 255.255.255.0
+clock rate 64000
+no shut
+do wr
+exit
+
+interface se3/0
+ipaddress 192.168.83.1 255.255.255.0
+clock rate 64000
+no shut
+do wr
+exit
